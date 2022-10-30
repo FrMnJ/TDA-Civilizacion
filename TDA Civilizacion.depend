@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1667153202 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Menu_Civilizaciones.h"
+
+1667154770 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
+	<stdio.h>
+	<stdlib.h>
+	"Aldeano.h"
+
+1667154774 c:\users\user\onedrive\documents\se\tda civilizacion\aldeano.h
+	<stdio.h>
+	<stdlib.h>
+	"Util.h"
+
+1665750474 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1667151305 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos_menu.h
+	"lista_aldeanos.h"
+	"Util.h"
+
+1667154606 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+	"lista_aldeanos.h"
+
+1667154732 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
+	"ListaLigada.h"
+	"lista_aldeanos_menu.h"
+
+1667152267 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+	"Nodo.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1667049018 c:\users\user\onedrive\documents\se\tda civilizacion\nodo.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Civilizacion.h"
+
