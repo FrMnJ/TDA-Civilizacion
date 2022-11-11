@@ -12,11 +12,13 @@ struct barco {
 };
 typedef struct barco Barco;
 
-typedef struct nodobarco{
+ typedef struct nodobarco{
     Barco *barco;
-    struct NodoBarco* siguiente;
-    struct NodoBarco* anterior;
+    struct nodobarco* siguiente;
+    struct nodobarco* anterior;
 }NodoBarco;
+
+
 
 Barco* Barco_init(size_t id, float combustible, float velocidad, float armadura){
     Barco *nuevoBarco=(Barco*)malloc(sizeof(Barco));

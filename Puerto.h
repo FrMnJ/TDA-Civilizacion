@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Barco.h"
 #include <stdbool.h>
+#include "Barco.h"
 
 typedef struct puerto{
     NodoBarco* inicio;
@@ -33,7 +33,7 @@ Puerto* Puerto_init(){
     return nuevoPuerto;
 }
 
-bool eliminar_final_Puerto(Puerto* puerto){
+bool eliminar_final_Puerto(Puerto *puerto){
     if(puerto==NULL){
         puts("Puerto no tiene memoria");
         return false;
@@ -42,9 +42,9 @@ bool eliminar_final_Puerto(Puerto* puerto){
         puts("No se puede eliminar en Puerto vacio");
         return false;
     }
-    NodoBarco* temp=puerto->final;
+    NodoBarco *temp=puerto->final;
     if(temp->anterior!=NULL){
-        temp->anterior->siguiente=NULL;
+        temp->anterior->siguiente=temp->siguiente;
         puerto->final=temp->anterior;
     }
     puerto->cantidad--;
@@ -52,7 +52,6 @@ bool eliminar_final_Puerto(Puerto* puerto){
         puerto->inicio=NULL;
         puerto->final=NULL;
     }
-
     NodoBarco_free(temp);
     return true;
 }

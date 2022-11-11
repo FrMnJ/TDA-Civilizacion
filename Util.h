@@ -32,6 +32,14 @@ int leerInt(char *mensaje){
     return entero;
 }
 
+int leerFloat(char *mensaje){
+    float entero;
+    printf("%s",mensaje);
+    scanf("%f",&entero);
+    puts("");
+    return entero;
+}
+
 
 size_t leerPos(char *mensaje){
     size_t entero;

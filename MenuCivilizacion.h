@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Civilizacion.h"
-
-
+#include "MenuPuerto.h"
+#include "lista_aldeanos_menu.h"
 
 
 void menuCivilizacion(Civilizacion *civilizacion){

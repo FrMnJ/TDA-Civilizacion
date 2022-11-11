@@ -1,6 +1,7 @@
 #ifndef MENU_CIVILIZACIONES_H_INCLUDED
 #define MENU_CIVILIZACIONES_H_INCLUDED
 #include "ListaLigada.h"
+#include "MenuCivilizacion.h"
 
 
 

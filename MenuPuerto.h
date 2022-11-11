@@ -22,7 +22,7 @@ void MenuPuerto(Puerto *puerto){
         printf("%i)Mostrar\n",MOSTRAR);
         printf("%i)Eliminar final\n",ELIMINAR_FINAL);
         printf("%i)Eliminar inicio\n",ELIMINAR_INICIO);
-        printf("%i)Buscar barco\n",ELIMINAR_INICIO);
+        printf("%i)Buscar barco\n",BUSCAR_BARCO);
         puts("0) Salir");
         opc=leerInt("Ingresa una opcion: ");
         switch(opc){

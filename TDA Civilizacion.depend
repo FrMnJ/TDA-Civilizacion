@@ -1,9 +1,13 @@
 # depslib dependency file v1.0
-<<<<<<< HEAD
-1668182108 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
-=======
-1667153202 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
->>>>>>> parent of 960da06 (Barco, Guerrero y Puerto)
+54 <<<<<<< HEAD
+
+1668205196 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Menu_Civilizaciones.h"
+	"menu_Barco.h"
+
+1668182535 ent of 960da06 (Barco, Guerrero y Puerto)
 	<stdio.h>
 	<stdlib.h>
 	"Menu_Civilizaciones.h"
@@ -19,7 +23,7 @@
 	<stdlib.h>
 	"Util.h"
 
-1665750474 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
+1668207136 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -29,14 +33,15 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1667154606 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1668200846 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
+	"Puerto.h"
 
-1667154732 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
+1668207211 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
 	"ListaLigada.h"
-	"lista_aldeanos_menu.h"
+	"MenuCivilizacion.h"
 
-1667152267 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+1668204728 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
 	"Nodo.h"
 	<stdio.h>
 	<stdlib.h>
@@ -48,22 +53,24 @@
 	<stdbool.h>
 	"Civilizacion.h"
 
-<<<<<<< HEAD
-1668121084 c:\users\user\onedrive\documents\se\tda civilizacion\guerrero.h
+1668181672 D
+
+1668205373 c:\users\user\onedrive\documents\se\tda civilizacion\guerrero.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Util.h"
 
-1668182031 c:\users\user\onedrive\documents\se\tda civilizacion\piladeguerreros.h
+1668205284 c:\users\user\onedrive\documents\se\tda civilizacion\piladeguerreros.h
 	"Nodo.h"
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"Guerrero.h"
 
-1668182669 c:\users\user\onedrive\documents\se\tda civilizacion\barco.h
+1668207104 c:\users\user\onedrive\documents\se\tda civilizacion\barco.h
 	"PiladeGuerreros.h"
+	"Guerrero.h"
 
 1668182535 c:\users\user\onedrive\documents\se\tda civilizacion\menu_barco.h
 	<stdio.h>
@@ -72,5 +79,22 @@
 	"Barco.h"
 	"Guerrero.h"
 
-=======
->>>>>>> parent of 960da06 (Barco, Guerrero y Puerto)
+1668182535 h"
+
+1668206877 c:\users\user\onedrive\documents\se\tda civilizacion\puerto.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Barco.h"
+
+1668207269 c:\users\user\onedrive\documents\se\tda civilizacion\menucivilizacion.h
+	<stdio.h>
+	<stdlib.h>
+	"Civilizacion.h"
+	"MenuPuerto.h"
+	"lista_aldeanos_menu.h"
+
+1668207420 c:\users\user\onedrive\documents\se\tda civilizacion\menupuerto.h
+	"Barco.h"
+	"Puerto.h"
+
