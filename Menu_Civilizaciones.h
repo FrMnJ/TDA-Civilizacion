@@ -1,7 +1,6 @@
 #ifndef MENU_CIVILIZACIONES_H_INCLUDED
 #define MENU_CIVILIZACIONES_H_INCLUDED
 #include "ListaLigada.h"
-#include "lista_aldeanos_menu.h"
 
 
 
@@ -94,7 +93,7 @@ void menu_civilizaciones(Civilizaciones* lista){
             }
             free(nombre);
             cls
-            lista_menu_aldeanos(civ->aldeanos);
+            menuCivilizacion(civ);
             break;
         }
     }while(opc!=SALIR);

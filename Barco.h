@@ -1,6 +1,7 @@
 #ifndef BARCO_H_INCLUDED
 #define BARCO_H_INCLUDED
 #include "PiladeGuerreros.h"
+#include "Guerrero.h"
 
 struct barco {
 	size_t id;

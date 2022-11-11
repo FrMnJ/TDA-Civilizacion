@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1668182108 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+=======
+1667153202 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+>>>>>>> parent of 960da06 (Barco, Guerrero y Puerto)
 	<stdio.h>
 	<stdlib.h>
-	"Guerrero.h"
-	"PiladeGuerreros.h"
 	"Menu_Civilizaciones.h"
 	"menu_Barco.h"
 
@@ -17,7 +19,7 @@
 	<stdlib.h>
 	"Util.h"
 
-1668122974 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
+1665750474 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -27,7 +29,7 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1668122635 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1667154606 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 
 1667154732 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
@@ -46,6 +48,7 @@
 	<stdbool.h>
 	"Civilizacion.h"
 
+<<<<<<< HEAD
 1668121084 c:\users\user\onedrive\documents\se\tda civilizacion\guerrero.h
 	<stdio.h>
 	<stdlib.h>
@@ -69,3 +72,5 @@
 	"Barco.h"
 	"Guerrero.h"
 
+=======
+>>>>>>> parent of 960da06 (Barco, Guerrero y Puerto)

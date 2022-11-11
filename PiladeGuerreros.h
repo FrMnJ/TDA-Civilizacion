@@ -98,10 +98,4 @@ bool Pila_volcar(PilaGuerreros* pila){
 }
 
 
-
-
-
-
-
-
 #endif // PILADEGUERREROS_H_INCLUDED

@@ -1,10 +1,11 @@
 #ifndef CIVILIZACION_H_INCLUDED
 #define CIVILIZACION_H_INCLUDED
 #include "lista_aldeanos.h"
+#include "Puerto.h"
 struct civilizacion{
     char *nombre;
    AldeanosLista *aldeanos;
-
+    Puerto *puerto;
 };
 
 typedef struct civilizacion Civilizacion;
@@ -17,6 +18,7 @@ Civilizacion*  Civilizacion_init(char *nombre){
     }
     aux->nombre=strdup(nombre);
     aux->aldeanos=AldeanosLista_init();
+    aux->puerto=Puerto_init();
     if(aux->aldeanos==NULL){
         puts("Error al crear la lista de aldeanos");
     }

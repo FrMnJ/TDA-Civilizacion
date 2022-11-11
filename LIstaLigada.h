@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+
 typedef struct listaligada{
     Nodo* inicio;
     Nodo* final;

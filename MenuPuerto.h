@@ -11,15 +11,18 @@ void MenuPuerto(Puerto *puerto){
         MOSTRAR,
         ELIMINAR_FINAL,
         ELIMINAR_INICIO,
+        BUSCAR_BARCO
     };
     int opc;
     Barco *aux;
+    size_t auxBuscar;
     do{
         printf("%i)Agregar al final\n",AGREGAR_FINAL);
         printf("%i)Agregar al inicio\n",AGREGAR_INICIO);
         printf("%i)Mostrar\n",MOSTRAR);
         printf("%i)Eliminar final\n",ELIMINAR_FINAL);
         printf("%i)Eliminar inicio\n",ELIMINAR_INICIO);
+        printf("%i)Buscar barco\n",ELIMINAR_INICIO);
         puts("0) Salir");
         opc=leerInt("Ingresa una opcion: ");
         switch(opc){
@@ -49,6 +52,18 @@ void MenuPuerto(Puerto *puerto){
             eliminar_final_Puerto(puerto);
             pause
             cls
+            break;
+        case BUSCAR_BARCO:
+            auxBuscar=leerPos("ID: ");
+            aux=Puerto_buscar(puerto,auxBuscar);
+            cls;
+            if(aux==NULL){
+                puts("No se encontraron resultados");
+            }
+            else{
+                BarcoMenu(aux);
+                cls
+            }
             break;
         case SALIR:
             return;
