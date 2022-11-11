@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
-1667153202 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+1668122475 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
 	<stdio.h>
 	<stdlib.h>
+	"Guerrero.h"
+	"PiladeGuerreros.h"
 	"Menu_Civilizaciones.h"
 
 1667154770 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
@@ -14,7 +16,7 @@
 	<stdlib.h>
 	"Util.h"
 
-1665750474 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
+1668122974 c:\users\user\onedrive\documents\se\tda civilizacion\util.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -24,7 +26,7 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1667154606 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1668122635 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 
 1667154732 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
@@ -42,4 +44,17 @@
 	<stdlib.h>
 	<stdbool.h>
 	"Civilizacion.h"
+
+1668121084 c:\users\user\onedrive\documents\se\tda civilizacion\guerrero.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Util.h"
+
+1668122437 c:\users\user\onedrive\documents\se\tda civilizacion\piladeguerreros.h
+	"Nodo.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Guerrero.h"
 

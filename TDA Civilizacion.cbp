@@ -32,10 +32,14 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="Aldeano.h" />
+		<Unit filename="Barco.h" />
 		<Unit filename="Civilizacion.h" />
+		<Unit filename="Guerrero.h" />
 		<Unit filename="LIstaLigada.h" />
 		<Unit filename="Menu_Civilizaciones.h" />
 		<Unit filename="Nodo.h" />
+		<Unit filename="PiladeGuerreros.h" />
+		<Unit filename="Puerto.h" />
 		<Unit filename="Util.h" />
 		<Unit filename="lista_aldeanos.h" />
 		<Unit filename="lista_aldeanos_menu.h" />

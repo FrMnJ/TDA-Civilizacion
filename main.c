@@ -3,10 +3,13 @@
 #define cls system("cls");
 #define pause system("pause");
 #define ENDL puts("");
+#include "Guerrero.h"
+#include "PiladeGuerreros.h"
 #include "Menu_Civilizaciones.h"
 
 int main() {
- Civilizaciones *civi=Civilizaciones_init();
+
+    Civilizaciones *civi=Civilizaciones_init();
     menu_civilizaciones(civi);
     Civilizaciones_free(civi);
 
