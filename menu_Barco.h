@@ -20,6 +20,8 @@ void BarcoMenu(Barco *barco){
     int opc;
     Guerrero *guerreroAux;
     do{
+        printf("\t\t| MENU BARCO |\n");
+    ENDL ENDL
         puts("1) Agregar guerrero");
         puts("2) Eliminar guerrero");
         puts("3) Mostrar el ultimo guerrero");

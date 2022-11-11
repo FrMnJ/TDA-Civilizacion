@@ -44,7 +44,7 @@ bool eliminar_final_Puerto(Puerto *puerto){
     }
     NodoBarco *temp=puerto->final;
     if(temp->anterior!=NULL){
-        temp->anterior->siguiente=temp->siguiente;
+        temp->anterior->siguiente=NULL;
         puerto->final=temp->anterior;
     }
     puerto->cantidad--;

@@ -27,6 +27,8 @@ void lista_menu_aldeanos(AldeanosLista* lista){
     size_t pos;
     Aldeano* aux;
     do{
+        printf("\t\t| MENU DE LISTA DE ALDEANOS|\n");
+        ENDL ENDL
         printf("%i)Agregar al final\n",AGREGAR_FINAL);
         printf("%i)Agregar al inicio\n",AGREGAR_INICIO);
         printf("%i)Mostrar\n",MOSTRAR);

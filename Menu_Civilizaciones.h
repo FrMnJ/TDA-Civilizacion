@@ -19,6 +19,8 @@ void menu_civilizaciones(Civilizaciones* lista){
     char *nombre;
     Civilizacion *civ;
     do{
+        puts("\t\t| MENU DE CIVILIZACIONES |");
+    ENDL ENDL
         puts("1.Insertar inicio");
         puts("2.Insertar final");
         puts("3.Mostrar");
@@ -26,8 +28,7 @@ void menu_civilizaciones(Civilizaciones* lista){
         puts("5.Eliminar al final");
         puts("6.Buscar");
         puts("0.Salir");
-        scanf("%i",&opc);
-        while(getchar()!='\n');
+        opc=leerInt("Ingresa una opcion: ");
         switch(opc){
         case INSERTAR_INICIO:
             cls

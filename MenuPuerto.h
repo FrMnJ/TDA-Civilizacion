@@ -17,6 +17,8 @@ void MenuPuerto(Puerto *puerto){
     Barco *aux;
     size_t auxBuscar;
     do{
+            printf("\t\t| MENU PUERTO |\n");
+    ENDL ENDL
         printf("%i)Agregar al final\n",AGREGAR_FINAL);
         printf("%i)Agregar al inicio\n",AGREGAR_INICIO);
         printf("%i)Mostrar\n",MOSTRAR);
@@ -66,6 +68,7 @@ void MenuPuerto(Puerto *puerto){
             }
             break;
         case SALIR:
+            cls
             return;
             break;
         default:

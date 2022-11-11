@@ -17,10 +17,13 @@ void menuCivilizacion(Civilizacion *civilizacion){
 
     int opc;
     do{
+        printf("\t\t| MENU DE CIVILIZACION: %s |\n",civilizacion->nombre);
+    ENDL ENDL
         puts("1) Puerto");
         puts("2) Aldeanos");
         puts("0) Salir");
         opc=leerInt("Opcion: ");
+        cls
         switch(opc){
         case PUERTO:
             MenuPuerto(civilizacion->puerto);
