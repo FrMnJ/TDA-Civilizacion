@@ -36,6 +36,7 @@
 		<Unit filename="Civilizacion.h" />
 		<Unit filename="Guerrero.h" />
 		<Unit filename="LIstaLigada.h" />
+		<Unit filename="MenuPuerto.h" />
 		<Unit filename="Menu_Civilizaciones.h" />
 		<Unit filename="Nodo.h" />
 		<Unit filename="PiladeGuerreros.h" />
@@ -46,6 +47,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="menu_Barco.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

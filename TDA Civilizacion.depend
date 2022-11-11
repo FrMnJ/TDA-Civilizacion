@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1668122475 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+1668182108 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Guerrero.h"
 	"PiladeGuerreros.h"
 	"Menu_Civilizaciones.h"
+	"menu_Barco.h"
 
 1667154770 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
 	<stdio.h>
@@ -39,7 +40,7 @@
 	<stdlib.h>
 	<stdbool.h>
 
-1667049018 c:\users\user\onedrive\documents\se\tda civilizacion\nodo.h
+1668181672 c:\users\user\onedrive\documents\se\tda civilizacion\nodo.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -51,10 +52,20 @@
 	<string.h>
 	"Util.h"
 
-1668122437 c:\users\user\onedrive\documents\se\tda civilizacion\piladeguerreros.h
+1668182031 c:\users\user\onedrive\documents\se\tda civilizacion\piladeguerreros.h
 	"Nodo.h"
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
+	"Guerrero.h"
+
+1668182669 c:\users\user\onedrive\documents\se\tda civilizacion\barco.h
+	"PiladeGuerreros.h"
+
+1668182535 c:\users\user\onedrive\documents\se\tda civilizacion\menu_barco.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Barco.h"
 	"Guerrero.h"
 

@@ -67,12 +67,13 @@ bool Pila_pop(PilaGuerreros* pila){
 }
 
 
-bool Pila_free(PilaGuerreros* pila){
+PilaGuerreros* Pila_free(PilaGuerreros* pila){
     while(!Pila_vacia(pila)){
        Pila_pop(pila);
     }
     free(pila);
-    return true;
+    pila=NULL;
+    return pila;
 }
 
 Guerrero *Pila_top(PilaGuerreros *pila){
@@ -95,6 +96,8 @@ bool Pila_volcar(PilaGuerreros* pila){
     }
     return true;
 }
+
+
 
 
 

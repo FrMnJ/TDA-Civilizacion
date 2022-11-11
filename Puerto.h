@@ -114,7 +114,7 @@ bool mostrar_Puerto(Puerto* puerto){
     NodoBarco *temp=puerto->inicio;
     printf("Cantidad: %i\n",puerto->cantidad);
     while(temp!=NULL){
-        Civilizacion_mostrar(temp->dato);
+        Barco_mostrar(temp->dato);
         temp=temp->siguiente;
     }
     return true;

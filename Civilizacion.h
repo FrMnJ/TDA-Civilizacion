@@ -4,6 +4,7 @@
 struct civilizacion{
     char *nombre;
    AldeanosLista *aldeanos;
+
 };
 
 typedef struct civilizacion Civilizacion;

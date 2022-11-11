@@ -7,15 +7,15 @@ struct barco {
 	float combustible;
 	float velocidad;
 	float armadura;
-	PilaGuerreros *guerreros;
+	PilaGuerreros* guerreros;
 };
 typedef struct barco Barco;
 
-struct NodoBarco(){
+typedef struct nodobarco{
     Barco *barco;
     struct NodoBarco* siguiente;
     struct NodoBarco* anterior;
-};
+}NodoBarco;
 
 Barco* Barco_init(size_t id, float combustible, float velocidad, float armadura){
     Barco *nuevoBarco=(Barco*)malloc(sizeof(Barco));
@@ -30,7 +30,7 @@ Barco* Barco_init(size_t id, float combustible, float velocidad, float armadura)
 }
 
 NodoBarco* NodoBarco_init(Barco *barco){
-    NodoBarco nuevoNodoBarco=(NodoBarco*)malloc(sizeof(NodoBarco));
+    NodoBarco *nuevoNodoBarco=(NodoBarco*)malloc(sizeof(NodoBarco));
     if(nuevoNodoBarco!=NULL){
         nuevoNodoBarco->barco=barco;
         nuevoNodoBarco->siguiente=NULL;
@@ -46,7 +46,8 @@ Barco* Barco_capturar(){
     combustible=leerFloat("Combustible: ");
     velocidad=leerFloat("Velocidad: ");
     armadura=leerFloat("Armadura: ");
-    return Barco* nuevoBarco=Barco_init(id,combustible.velocidad,armadura);
+    Barco* nuevoBarco=Barco_init(id,combustible,velocidad,armadura);
+    return nuevoBarco;
 }
 
 Barco *Barco_free(Barco *barco){
@@ -58,11 +59,11 @@ Barco *Barco_free(Barco *barco){
 }
 
 NodoBarco *NodoBarco_free(NodoBarco *nodobarco){
-    if(barco!=NULL){
+    if(nodobarco!=NULL){
         Barco_free(nodobarco->barco);
     }
     free(nodobarco);
-    return barco;
+    return nodobarco;
 }
 
 bool Barco_mostrar(Barco *barco){
@@ -75,6 +76,16 @@ bool Barco_mostrar(Barco *barco){
         return true;
     }
     return false;
+}
+
+bool Guerreros_mostrar(Barco* barco){
+    NodoGuerrero *aux=barco->guerreros->raiz;
+    while(aux!=NULL){
+        Guerrero_mostrar(aux->guerrero);
+        aux=aux->siguiente;
+        ENDL
+    }
+    return true;
 }
 
 #endif // BARCO_H_INCLUDED

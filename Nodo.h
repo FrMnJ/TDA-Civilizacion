@@ -12,7 +12,7 @@ typedef struct nodo{
     struct nodo* anterior;
 }Nodo;
 
-Nodo* Nodo_init(int dato){
+Nodo* Nodo_init(Civilizacion* dato){
     Nodo* aux=(Nodo*)malloc(sizeof(Nodo));
     if(aux==NULL){
         puts("No se pudo reservar memoria para nodo");
