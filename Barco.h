@@ -46,9 +46,9 @@ Barco* Barco_capturar(){
     size_t id;
     float combustible,velocidad,armadura;
     id=leerPos("ID: ");
-    combustible=leerFloat("Combustible: ");
-    velocidad=leerFloat("Velocidad: ");
-    armadura=leerFloat("Armadura: ");
+    combustible=leerFloat("Combustible(0.0 - 100.0): ");
+    velocidad=leerFloat("Velocidad(0.0 - 60.0): ");
+    armadura=leerFloat("Armadura(0.0 - 30.0): ");
     Barco* nuevoBarco=Barco_init(id,combustible,velocidad,armadura);
     return nuevoBarco;
 }
@@ -72,9 +72,9 @@ NodoBarco *NodoBarco_free(NodoBarco *nodobarco){
 bool Barco_mostrar(Barco *barco){
     if(barco!=NULL){
         printf("ID: %i\n",barco->id);
-        printf("Combustible: %i\n",barco->combustible);
-        printf("Velocidad: %i\n",barco->velocidad);
-        printf("Armadura: %i\n",barco->armadura);
+        printf("Combustible: %.2f\n",barco->combustible);
+        printf("Velocidad: %.2f\n",barco->velocidad);
+        printf("Armadura: %.2f\n",barco->armadura);
         printf("Numero de guerreros: %i\n",barco->guerreros->cantidad);
         return true;
     }

@@ -12,7 +12,8 @@ void menuCivilizacion(Civilizacion *civilizacion){
     enum OPCCivilizacion{
         SALIR,
         PUERTO,
-        ALDEANOS
+        ALDEANOS,
+        BATALLA
     };
 
     int opc;
@@ -21,6 +22,7 @@ void menuCivilizacion(Civilizacion *civilizacion){
     ENDL ENDL
         puts("1) Puerto");
         puts("2) Aldeanos");
+        puts("3) Batalla");
         puts("0) Salir");
         opc=leerInt("Opcion: ");
         cls
@@ -30,6 +32,9 @@ void menuCivilizacion(Civilizacion *civilizacion){
             break;
         case ALDEANOS:
             lista_menu_aldeanos(civilizacion->aldeanos);
+            break;
+        case BATALLA:
+            menuBatalla(civilizacion);
             break;
         case SALIR:
             continue;

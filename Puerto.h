@@ -56,6 +56,28 @@ bool eliminar_final_Puerto(Puerto *puerto){
     return true;
 }
 
+NodoBarco* desligar_final_Puerto(Puerto *puerto){
+    if(puerto==NULL){
+        puts("Puerto no tiene memoria");
+        return NULL;
+    }
+    if(vacia_Puerto(puerto)){
+        puts("No se puede desligar en Puerto vacio");
+        return NULL;
+    }
+    NodoBarco *temp=puerto->final;
+    if(temp->anterior!=NULL){
+        temp->anterior->siguiente=NULL;
+        puerto->final=temp->anterior;
+    }
+    puerto->cantidad--;
+    if(vacia_Puerto(puerto)){
+        puerto->inicio=NULL;
+        puerto->final=NULL;
+    }
+    return temp;
+}
+
 
 bool Insertar_al_principio_Puerto(Puerto* puerto ,Barco *dato){
     bool suc=false;
@@ -64,6 +86,31 @@ bool Insertar_al_principio_Puerto(Puerto* puerto ,Barco *dato){
         return suc;
     }
     NodoBarco* nuevo=NodoBarco_init(dato);
+    if(nuevo==NULL){
+        puts("No se pudo insertar al inicio");
+        return suc;
+    }
+    if(vacia_Puerto(puerto)){
+        puerto->inicio=nuevo;
+        puerto->final=nuevo;
+        puerto->cantidad++;
+    }
+    else{
+        nuevo->siguiente=puerto->inicio;
+        puerto->inicio->anterior=nuevo;
+        puerto->inicio=nuevo;
+        puerto->cantidad++;
+    }
+    suc=true;
+    return suc;
+}
+
+bool Insertar_al_principio_PuertoN(Puerto* puerto ,NodoBarco *nuevo){
+    bool suc=false;
+    if(puerto==NULL){
+        puts("Puerto no tiene memoria");
+        return suc;
+    }
     if(nuevo==NULL){
         puts("No se pudo insertar al inicio");
         return suc;
@@ -101,9 +148,30 @@ bool eliminar_inicio_Puerto(Puerto* puerto){
     else{
         puerto->inicio->anterior=NULL;
     }
-    NodoBarco_free(temp->barco);
-    free(temp);
+    temp=NodoBarco_free(temp);
     return true;
+}
+
+
+NodoBarco *desligar_inicio_Puerto(Puerto* puerto){
+    if(puerto==NULL){
+        puts("Puerto no tiene memoria");
+        return false;
+    }
+    if(vacia_Puerto(puerto)){
+        puts("No se puede desligar en puerto vacio");
+        return false;
+    }
+    NodoBarco* temp=puerto->inicio;
+    puerto->inicio=temp->siguiente;
+    puerto->cantidad--;
+    if(vacia_Puerto(puerto)){
+        puerto->final=NULL;
+    }
+    else{
+        puerto->inicio->anterior=NULL;
+    }
+    return temp;
 }
 
 bool Insertar_al_final_Puerto(Puerto* puerto ,Barco *dato){
@@ -122,7 +190,23 @@ bool Insertar_al_final_Puerto(Puerto* puerto ,Barco *dato){
     return true;
 }
 
-bool free_Barco(Puerto* puerto){
+
+bool Insertar_al_final_PuertoN(Puerto* puerto ,NodoBarco *nuevo){
+    if(puerto==NULL){
+        puts("ListaLigada no tiene memoria");
+        return false;
+    }
+    if(vacia_Puerto(puerto)){
+        return Insertar_al_principio_Puerto(puerto,nuevo);
+    }
+    nuevo->anterior=puerto->final;
+    puerto->final->siguiente=nuevo;
+    puerto->final=nuevo;
+    puerto->cantidad++;
+    return true;
+}
+
+bool free_Puerto(Puerto* puerto){
     while(puerto->inicio!=NULL){
         eliminar_final_Puerto(puerto);
     }
@@ -139,6 +223,7 @@ bool mostrar_Puerto(Puerto* puerto){
     printf("Cantidad: %i\n",puerto->cantidad);
     while(temp!=NULL){
         Barco_mostrar(temp->barco);
+        ENDL ENDL
         temp=temp->siguiente;
     }
     return true;

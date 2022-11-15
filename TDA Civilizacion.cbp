@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="Aldeano.h" />
 		<Unit filename="Barco.h" />
+		<Unit filename="Batalla.h" />
 		<Unit filename="Civilizacion.h" />
 		<Unit filename="Guerrero.h" />
 		<Unit filename="LIstaLigada.h" />

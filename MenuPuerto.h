@@ -41,6 +41,7 @@ void MenuPuerto(Puerto *puerto){
            Insertar_al_final_Puerto(puerto,aux);
             break;
         case MOSTRAR:
+            cls
             mostrar_Puerto(puerto);
             pause
             cls
