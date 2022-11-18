@@ -75,6 +75,8 @@ NodoBarco* desligar_final_Puerto(Puerto *puerto){
         puerto->inicio=NULL;
         puerto->final=NULL;
     }
+    temp->siguiente=NULL;
+    temp->anterior=NULL;
     return temp;
 }
 
@@ -171,6 +173,8 @@ NodoBarco *desligar_inicio_Puerto(Puerto* puerto){
     else{
         puerto->inicio->anterior=NULL;
     }
+    temp->siguiente=NULL;
+    temp->anterior=NULL;
     return temp;
 }
 
@@ -197,7 +201,8 @@ bool Insertar_al_final_PuertoN(Puerto* puerto ,NodoBarco *nuevo){
         return false;
     }
     if(vacia_Puerto(puerto)){
-        return Insertar_al_principio_Puerto(puerto,nuevo);
+        return Insertar_al_principio_PuertoN(puerto,nuevo);
+
     }
     nuevo->anterior=puerto->final;
     puerto->final->siguiente=nuevo;

@@ -100,7 +100,7 @@ NodoBarco *desligar_inicio_Batalla(Batalla* batalla)
     if(vacia_Batalla(batalla))
     {
         puts("No se puede eliminar en Batalla vacia");
-        return false;
+        return NULL;
     }
     NodoBarco* temp=batalla->inicio;
     batalla->inicio=temp->siguiente;
@@ -113,6 +113,8 @@ NodoBarco *desligar_inicio_Batalla(Batalla* batalla)
     {
         batalla->inicio->anterior=NULL;
     }
+    temp->siguiente=NULL;
+    temp->anterior=NULL;
     return temp;
 }
 

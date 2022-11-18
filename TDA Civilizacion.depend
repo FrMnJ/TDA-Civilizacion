@@ -33,7 +33,7 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1668478089 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1668729499 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 	"Puerto.h"
 	"Batalla.h"
@@ -69,7 +69,7 @@
 	<stdbool.h>
 	"Guerrero.h"
 
-1668264418 c:\users\user\onedrive\documents\se\tda civilizacion\barco.h
+1668724410 c:\users\user\onedrive\documents\se\tda civilizacion\barco.h
 	"PiladeGuerreros.h"
 	"Guerrero.h"
 
@@ -82,24 +82,24 @@
 
 1668182535 h"
 
-1668477889 c:\users\user\onedrive\documents\se\tda civilizacion\puerto.h
+1668729966 c:\users\user\onedrive\documents\se\tda civilizacion\puerto.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"Barco.h"
 
-1668477685 c:\users\user\onedrive\documents\se\tda civilizacion\menucivilizacion.h
+1668724410 c:\users\user\onedrive\documents\se\tda civilizacion\menucivilizacion.h
 	<stdio.h>
 	<stdlib.h>
 	"Civilizacion.h"
 	"MenuPuerto.h"
 	"lista_aldeanos_menu.h"
 
-1668262528 c:\users\user\onedrive\documents\se\tda civilizacion\menupuerto.h
+1668724410 c:\users\user\onedrive\documents\se\tda civilizacion\menupuerto.h
 	"Barco.h"
 	"Puerto.h"
 
-1668477967 c:\users\user\onedrive\documents\se\tda civilizacion\batalla.h
+1668730351 c:\users\user\onedrive\documents\se\tda civilizacion\batalla.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

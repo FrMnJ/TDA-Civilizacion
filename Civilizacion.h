@@ -81,10 +81,11 @@ void menuBatalla(Civilizacion* civilizacion)
     {
         printf("%i)Encolar(Extrayendo al inicio)\n",ENCOLAR_EXTRAYENDO_INICIO);
         printf("%i)Encolar(Extrayendo al final)\n",ENCOLAR_EXTRAYENDO_FINAL);
-        printf("%i)Regresar barco al puerto\n",REGRESAR_PUERTO);
         printf("%i)Mostrar\n",MOSTRAR);
+        printf("%i)Regresar barco al puerto\n",REGRESAR_PUERTO);
         printf("%i)Salir\n",SALIR);
         opc=leerInt("Ingrese una opcion: ");
+        cls
         switch(opc)
     {
     case ENCOLAR_EXTRAYENDO_INICIO:
@@ -103,8 +104,10 @@ void menuBatalla(Civilizacion* civilizacion)
             }
             else
             {
+
                 Insertar_al_principio_PuertoN(civilizacion->puerto,nuevo);
             }
+            pause cls
             break;
         case ENCOLAR_EXTRAYENDO_FINAL:
             nuevo=desligar_final_Puerto(civilizacion->puerto);
@@ -124,15 +127,17 @@ void menuBatalla(Civilizacion* civilizacion)
             {
                 Insertar_al_final_PuertoN(civilizacion->puerto,nuevo);
             }
+            pause cls
             break;
         case REGRESAR_PUERTO:
             nuevo=desligar_inicio_Batalla(civilizacion->batalla);
             if(nuevo==NULL)
             {
-                puts("No se pudo extraer ningun barco del puerto");
+                puts("No se pudo extraer ningun barco de la batalla");
             }
             else
             {
+
                 nuevo->barco->armadura=leerFloat("Armadura: ");
                 nuevo->barco->combustible=leerFloat("Combustible: ");
                 if(nuevo->barco->armadura>0)
@@ -158,16 +163,18 @@ void menuBatalla(Civilizacion* civilizacion)
                     nuevo=NodoBarco_free(nuevo);
                 }
             }
+            pause cls
             break;
                     case MOSTRAR:
                         mostrar_Batalla(civilizacion->batalla);
+                        pause cls
                         break;
                     case SALIR:
                         continue;
                         break;
                      default:
                         puts("Opcion incorrecta");
-                        break;
+                    break;
         }
     }
     while(opc!=SALIR);
