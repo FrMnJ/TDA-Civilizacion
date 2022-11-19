@@ -42,6 +42,20 @@ Civilizacion* Civilizacion_free(Civilizacion* civ){
     return civ;
 }
 
+bool Civilizacion_respaldar(Civilizacion *civilizacion,FILE *archivo){
+    if(civilizacion==NULL){
+        puts("Civilizacion no tiene memoria");
+        return false;
+    }
+    if(archivo==NULL){
+        puts("No se pudo abrir el archivo");
+        return true;
+    }
+    fprintf_s(archivo,"%s\n",civilizacion->nombre);
+    return true;
+
+}
+
 Civilizacion* civilizacion_capturar(){
     char *nombre=leerCadena("Nombre de la civilizacion: ");
     Civilizacion *aux=Civilizacion_init(nombre);

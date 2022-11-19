@@ -1,6 +1,7 @@
 #ifndef LISTALIGADA_H_INCLUDED
 #define LISTALIGADA_H_INCLUDED
 #include "Nodo.h"
+#include "Civilizacion.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -98,6 +99,29 @@ bool Insertar_al_final_ListaLigada(ListaLigada* lista ,Civilizacion *dato){
     return true;
 }
 
+bool Civilizaciones_respaldar(ListaLigada *civilizaciones){
+    if(civilizaciones==NULL){
+        puts("No hay memoria en civilizacion");
+        return false;
+    }
+    if(civilizaciones->cantidad==0){
+        puts("No hay civilizaciones");
+        return false;
+    }
+    FILE *archivo=fopen("civilizaciones.txt","w");
+    if(archivo==NULL){
+        puts("No se pudo abrir archivo");
+        return false;
+    }
+    Nodo *temp=civilizaciones->inicio;
+    while(temp!=NULL){
+        Civilizacion_respaldar(temp->dato,archivo);
+        temp=temp->siguiente;
+    }
+    fclose(archivo);
+    return true;
+}
+
 bool free_ListaLigada(ListaLigada* lista){
     while(lista->inicio!=NULL){
         eliminar_inicio_ListaLigada(lista);
@@ -161,6 +185,7 @@ Civilizacion *Civilizaciones_buscar(ListaLigada* civ, char *nombre){
 
 typedef ListaLigada Civilizaciones;
 #define Civilizaciones_init ListaLigada_init
+#define Civilizaciones_respa Civilizaciones_respaldar
 #define Civilizaciones_free free_ListaLigada
 #define Civilizaciones_insertar_al_inicio Insertar_al_principio_ListaLigada
 #define Civilizaciones_insertar_al_final Insertar_al_final_ListaLigada

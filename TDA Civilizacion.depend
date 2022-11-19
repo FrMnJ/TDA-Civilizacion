@@ -33,7 +33,7 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1668729499 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1668870957 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 	"Puerto.h"
 	"Batalla.h"
@@ -42,8 +42,9 @@
 	"ListaLigada.h"
 	"MenuCivilizacion.h"
 
-1668204728 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+1668870963 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
 	"Nodo.h"
+	"Civilizacion.h"
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
