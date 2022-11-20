@@ -228,5 +228,25 @@ bool AldeanosLista_eliminar(AldeanosLista *lista, size_t pos)
     return true;
 }
 
+bool recuperar_ListaAldeanos(AldeanosLista *lista,FILE *archivo){
+    if(archivo==NULL){
+        puts("No se pudo abrir archivo");
+        return false;
+    }
+    Aldeano *nuevo;
+    char buffer[100];
+    int edad,salud;
+    while(true){
+        fscanf(archivo,"%s",buffer);
+        //buffer[strlen(buffer)-1]='\0';
+        fscanf(archivo,"%i",&edad);
+        fscanf(archivo,"%i",&salud);
+        if(feof(archivo)) break;
+        nuevo=Aldeano_init(buffer,edad,salud);
+        AldeanosLista_agregar_final(lista,nuevo);
+    }
+    fclose(archivo);
+    return true;
+}
 
 #endif // LISTA_ALDEANOS_H_INCLUDED

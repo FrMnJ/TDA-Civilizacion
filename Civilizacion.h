@@ -51,9 +51,45 @@ bool Civilizacion_respaldar(Civilizacion *civilizacion,FILE *archivo){
         puts("No se pudo abrir el archivo");
         return true;
     }
-    fprintf_s(archivo,"%s\n",civilizacion->nombre);
+    fprintf(archivo,"%s\n",civilizacion->nombre);
+    char nombre[100];
+    strcpy(nombre,civilizacion->nombre);
+    strcat(nombre,".txt");
+    FILE *archivoLista=fopen(nombre,"w");
+    if(archivoLista==NULL){
+        puts("No se pudo abrir archivo lista");
+        return false;
+    }
+    for(size_t i=0;i<civilizacion->aldeanos->cantidad;i++){
+            fprintf(archivoLista,"%s\n",civilizacion->aldeanos->aldeanos[i]->nombre);
+            fprintf(archivoLista,"%i\n",civilizacion->aldeanos->aldeanos[i]->edad);
+            fprintf(archivoLista,"%i\n",civilizacion->aldeanos->aldeanos[i]->salud);
+    }
+    fclose(archivoLista);
     return true;
 
+}
+
+Civilizacion* recuperar_Civilizacion(FILE *archivo){
+    if(archivo==NULL){
+        puts("No se pudo abrir el archivo");
+        return NULL;
+    }
+    char buffer[100];
+    fgets(buffer,100,archivo);
+    if(feof(archivo)) return NULL;
+    buffer[strlen(buffer)-1]='\0';
+    Civilizacion *nueva=Civilizacion_init(buffer);
+    if(nueva==NULL){
+        puts("Error al crear civilizacion");
+        return NULL;
+    }
+    char nombre_archivo[100];
+    strcpy(nombre_archivo,buffer);
+    strcat(nombre_archivo,".txt");
+    FILE *archivoLista=fopen(nombre_archivo,"r");
+    recuperar_ListaAldeanos(nueva->aldeanos,archivoLista);
+    return nueva;
 }
 
 Civilizacion* civilizacion_capturar(){

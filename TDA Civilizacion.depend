@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 54 <<<<<<< HEAD
 
-1668205196 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
+1668871259 source:c:\users\user\onedrive\documents\se\tda civilizacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Menu_Civilizaciones.h"
@@ -13,7 +13,7 @@
 	"Menu_Civilizaciones.h"
 	"menu_Barco.h"
 
-1667154770 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
+1668913734 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
 	<stdio.h>
 	<stdlib.h>
 	"Aldeano.h"
@@ -33,16 +33,16 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-1668870957 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+1668913068 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 	"Puerto.h"
 	"Batalla.h"
 
-1668209355 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
+1668913906 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
 	"ListaLigada.h"
 	"MenuCivilizacion.h"
 
-1668870963 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+1668908728 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
 	"Nodo.h"
 	"Civilizacion.h"
 	<stdio.h>

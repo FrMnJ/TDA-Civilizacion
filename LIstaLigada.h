@@ -122,6 +122,20 @@ bool Civilizaciones_respaldar(ListaLigada *civilizaciones){
     return true;
 }
 
+bool recuperar_civilizaciones(ListaLigada *civilizaciones){
+    FILE *archivo=fopen("civilizaciones.txt","r");
+    if(archivo==NULL){
+        puts("No se pudo abrir el archivo");
+    }
+    while(true){
+          char *nuevo=recuperar_Civilizacion(archivo);
+        if(nuevo==NULL) break;
+        Insertar_al_final_ListaLigada(civilizaciones,nuevo);
+    }
+    fclose(archivo);
+    return true;
+}
+
 bool free_ListaLigada(ListaLigada* lista){
     while(lista->inicio!=NULL){
         eliminar_inicio_ListaLigada(lista);

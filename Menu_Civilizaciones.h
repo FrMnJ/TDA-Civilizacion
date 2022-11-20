@@ -13,6 +13,8 @@ void menu_civilizaciones(Civilizaciones* lista){
     MOSTRAR,
     ELIMINAR_INICIO,
     ELIMINAR_FINAL,
+    RESPALDAR,
+    RECUPERAR,
     BUSCAR
 };
     int opc;
@@ -26,7 +28,9 @@ void menu_civilizaciones(Civilizaciones* lista){
         puts("3.Mostrar");
         puts("4.Eliminar al inicio");
         puts("5.Eliminar al final");
-        puts("6.Buscar");
+        puts("6.Respaldar");
+        puts("7.Recuperar");
+        puts("8.Buscar");
         puts("0.Salir");
         opc=leerInt("Ingresa una opcion: ");
         switch(opc){
@@ -84,6 +88,25 @@ void menu_civilizaciones(Civilizaciones* lista){
             else
                 puts("Civilizaciones: No se pudo liberar correctamente");
                 pause cls
+            break;
+
+        case RESPALDAR:
+            if(Civilizaciones_respaldar(lista)){
+                puts("Se respaldaron exitosamente las civilizaciones");
+            }
+            else
+            {
+                puts("No se respaldaron exitosamente las civilizaciones");
+            }
+            pause  cls
+            break;
+        case RECUPERAR:
+            if(recuperar_civilizaciones(lista))
+            {
+                puts("Se recuperaron exitosamente las civilizaciones");
+            }
+            else puts("No se recuperaron exitosamente las civilizaciones");
+            pause cls
             break;
         case BUSCAR:
             nombre=strdup(leerCadena("Nombre: "));
