@@ -33,7 +33,11 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
+<<<<<<< HEAD
 1668913068 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+=======
+1668874439 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
+>>>>>>> 1ee9803 (v2)
 	"lista_aldeanos.h"
 	"Puerto.h"
 	"Batalla.h"
@@ -42,7 +46,11 @@
 	"ListaLigada.h"
 	"MenuCivilizacion.h"
 
+<<<<<<< HEAD
 1668908728 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+=======
+1668871698 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
+>>>>>>> 1ee9803 (v2)
 	"Nodo.h"
 	"Civilizacion.h"
 	<stdio.h>

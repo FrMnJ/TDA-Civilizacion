@@ -190,6 +190,7 @@ void menuBatalla(Civilizacion* civilizacion)
 
                 nuevo->barco->armadura=leerFloat("Armadura: ");
                 nuevo->barco->combustible=leerFloat("Combustible: ");
+                nuevo->barco->velocidad=0;
                 if(nuevo->barco->armadura>0)
                 {
                     puts("1.Insertar al final");

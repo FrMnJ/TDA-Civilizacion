@@ -133,6 +133,8 @@ bool AldeanosLista_mostrar(AldeanosLista* lista)
 }
 
 
+
+
 bool AldeanosLista_agregar_inicio(AldeanosLista* lista,Aldeano *al)
 {
     bool success=false;
