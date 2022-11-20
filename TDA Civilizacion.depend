@@ -13,7 +13,7 @@
 	"Menu_Civilizaciones.h"
 	"menu_Barco.h"
 
-1668913734 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
+1668914557 c:\users\user\onedrive\documents\se\tda civilizacion\lista_aldeanos.h
 	<stdio.h>
 	<stdlib.h>
 	"Aldeano.h"
@@ -33,24 +33,28 @@
 	"lista_aldeanos.h"
 	"Util.h"
 
-<<<<<<< HEAD
-1668913068 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
-=======
-1668874439 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
->>>>>>> 1ee9803 (v2)
+1668181672 D
+
+1668914557 c:\users\user\onedrive\documents\se\tda civilizacion\civilizacion.h
 	"lista_aldeanos.h"
 	"Puerto.h"
 	"Batalla.h"
 
-1668913906 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
+1668871698 9803 (v2)
+	"lista_aldeanos.h"
+	"Puerto.h"
+	"Batalla.h"
+	"Nodo.h"
+	"Civilizacion.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1668914379 c:\users\user\onedrive\documents\se\tda civilizacion\menu_civilizaciones.h
 	"ListaLigada.h"
 	"MenuCivilizacion.h"
 
-<<<<<<< HEAD
-1668908728 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
-=======
-1668871698 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
->>>>>>> 1ee9803 (v2)
+1668914379 c:\users\user\onedrive\documents\se\tda civilizacion\listaligada.h
 	"Nodo.h"
 	"Civilizacion.h"
 	<stdio.h>
@@ -62,8 +66,6 @@
 	<stdlib.h>
 	<stdbool.h>
 	"Civilizacion.h"
-
-1668181672 D
 
 1668208995 c:\users\user\onedrive\documents\se\tda civilizacion\guerrero.h
 	<stdio.h>
